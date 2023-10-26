@@ -9,7 +9,7 @@ public class Aeronave {
     }
 
     public String getModelo() {
-        return modelo;
+        return this.modelo;
     }
 
     public void setModelo(String modelo) {

@@ -2,13 +2,14 @@ package Model;
 
 public class Voo {
     private Aviao aeronave;
-    private int id;
+    private int nro;
     private String data;
     private String hora;
 
-    public Voo(Aviao aeronave, int id, String data, String hora) {
+    public Voo(Aviao aeronave, int nro, String data, String hora) throws Exception {
+        if(aeronave == null) throw new Exception("Avião não pode ser nulo");
         this.aeronave = aeronave;
-        this.id = id;
+        this.nro = nro;
         this.data = data;
         this.hora = hora;
     }
@@ -17,8 +18,8 @@ public class Voo {
         return aeronave;
     }
 
-    public int getId() {
-        return id;
+    public int getNro() {
+        return nro;
     }
 
     public String getData() {
