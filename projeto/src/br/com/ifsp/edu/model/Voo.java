@@ -1,4 +1,4 @@
-package Model;
+package br.com.ifsp.edu.model;
 
 public class Voo {
     private Aviao aeronave;

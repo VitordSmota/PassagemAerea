@@ -1,8 +1,7 @@
-package Model;
+package br.com.ifsp.edu.model;
 
 public class Aeronave {
     protected String modelo;
-
 
     public Aeronave(String modelo) {
         this.modelo = modelo;
